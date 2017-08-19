@@ -1,0 +1,230 @@
+/*home.html-----------------------------*/
+/*type selector*/
+body {
+    line-height:2rem;
+    text-align:left;
+    color:rgba(100,100,100,1);
+    font-size:1.2rem;
+    background-color: #F5F7F9;
+}
+.header{
+    position: fixed;
+    top:0px;
+    width:100%;
+}
+h2 ,h3, h4{
+    font-weight: normal;
+}
+h3{
+    font-size:2.5rem;
+}
+
+footer{
+    border-top: solid lightgray 4px;
+    margin-left:0px;
+}
+
+
+/*id selector*/
+
+#name{
+    border-radius:50%;
+    font-size : larger;
+}
+
+#user-name-id{
+    color:#8AEDFD;
+    font-size:1.2rem;
+}
+/*DRY CSS*/
+.bold{
+    font-weight:bold;
+    margin:0px;
+
+}
+.default-color{
+    color:rgba(50,226,202,0.65);
+}
+
+.default-width{
+    width:80%;
+}
+.auto-margin{
+    margin:auto;
+}
+
+
+/*class selector*/
+
+.main-header{
+    background-color:rgba(50,226,202,0.65);
+    margin-top:0px;
+    padding:5px;
+    border-radius:5px;
+    text-decoration:none;
+}
+.main-header div{
+    display:inline-block;
+    padding:10px;
+    margin-left:10%;
+    text-align:center;
+    border-radius: 5px;
+    box-shadow: inset 0 0 20px 10px rgba(50,226,202,0.65);
+    
+}
+.main-header div:first-child{
+    border-radius: 50% ;
+    font-size: 1.5rem;
+}
+
+.intro{
+    margin-top:10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px;
+    /*overflow:auto;*/
+}
+
+/*float layout--------*/
+.intro-words{
+    width:59%;
+    float:right;
+}
+.intro-image{
+    width:39%;
+    border:solid lightgray 1px;
+    float:left;
+    margin-top: 23px;
+}
+
+/*float clearfix--------*/
+.group:after{
+    content: "";
+    display : table;
+    clear : both;
+}
+
+
+
+.intro-image img{
+    width:100%;
+}
+
+.intro-image-about{
+    padding-left:10px;
+}
+.intro-image-about {
+    margin-top:0px;
+}
+
+.more{
+    overflow:auto;
+    width:100%;
+    /*background-color:black;*/
+    padding:40px;
+    padding-left:10px;
+}
+
+.inl-list li{
+    display:inline;
+}
+.inl-list li + li{
+    padding-left:50px;
+}
+
+.inl-list li img{
+    border-radius:50%;
+    width:100px;
+    height:100px;
+
+}
+/*pseudo class*/
+a:link{
+    text-decoration:none;
+
+}
+
+a:hover{
+    color:orange;
+}
+
+a:visited{
+    color:seagreen;
+}
+/*to make color white*/
+
+
+.bg-white,
+.edu-main-section,
+.proj-main-section
+.edu-skills,
+.main-header div{
+    background-color: white;
+}
+
+/*education.html--------------------------------------*/
+
+.edu-main-section,
+.proj-main-section {
+    background-color:white;
+    padding:20px;
+    margin-top:10px;
+}
+
+.edu-list li div,
+.proj-list li div{
+    display:inline-block;
+}
+.edu-list li ,
+.proj-list li{
+    list-style-type:none;
+    border:solid lightgray 1px;
+    border-radius:2px;
+    margin-top:10px;
+    padding-left:10px;
+    line-height: 10px;
+    box-shadow: 5px 5px 10px lightgray;
+
+}
+
+
+.manit-image, .jnv-image, .dqa-image, .mrs-image, .moodle-image{
+    border-radius:50%;
+    width:70px;
+}
+.jnv-image{
+    padding-top:10px;
+}
+
+
+
+.detail{
+    padding-left: 20px;
+}
+
+.degree, .title{
+    font-size:1.6rem;
+}
+
+.degree , .title + span {
+    font-size:1rem;
+}
+.edu-main-section div h1,
+.proj-main-section div h1{
+    text-align:center;
+    font-weight:normal;
+    font-size:2.2rem;
+}
+
+
+.edu-skills{
+    padding:20px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+
+/*projects.html-------------------*/
+.tools{
+    font-weight:700;
+}
+
